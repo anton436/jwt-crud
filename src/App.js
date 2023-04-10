@@ -5,6 +5,7 @@ import Register from "./components/Auth/Register";
 import RegisterSuccess from "./components/Auth/RegisterSuccess";
 import NavScrollExample from "./components/Navbar/Navbar";
 import AddProduct from "./components/product/AddProduct";
+import EditProduct from "./components/product/EditProduct";
 import ProductList from "./components/product/ProductList";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
 
         <Route path="/products" element={<ProductList />} />
         <Route path="/add" element={<AddProduct />} />
+        <Route path="/edit/:id" element={<EditProduct />} />
 
         <Route path="*" element={<h1>NOT FOUND PAGE</h1>} />
       </Routes>
