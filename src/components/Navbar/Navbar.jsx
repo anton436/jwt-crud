@@ -41,6 +41,16 @@ function NavScrollExample() {
               <NavDropdown.Divider />
               <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
             </NavDropdown>
+
+            <NavDropdown title="Product" id="navbarScrollingDropdown">
+              <NavDropdown.Item onClick={() => navigate("/add")}>
+                Add Product
+              </NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/products")}>
+                Product List
+              </NavDropdown.Item>
+            </NavDropdown>
+
             <Nav.Link href="#" disabled>
               {user ? user : "No auth user"}
             </Nav.Link>
